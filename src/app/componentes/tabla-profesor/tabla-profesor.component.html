@@ -1,0 +1,19 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Legajo</th>
+      <th>Apellido</th>
+      <th>Materia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let profesor of listadoProfesores">
+      <td>{{profesor.legajo}}</td>
+      <td>{{profesor.apellido}}</td>
+      <td>{{profesor.materia}}</td>
+      <td><button type="button" class="btn btn-info btn-circle"   (click)="mostrarDetalles(profesor)"><i class="fa fa-check"></i>
+      </button></td>
+    </tr>
+   
+  </tbody>
+</table>
